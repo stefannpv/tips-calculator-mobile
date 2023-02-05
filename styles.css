@@ -1,0 +1,172 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	overflow: 0;
+	overflow-x: hidden;
+	background-color: hsl(185, 41%, 84%);
+    font-family: "Space Mono";
+}
+
+.logo-div{
+	display: flex;
+	justify-content: center;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.hero{
+	background-color: #ffff;
+	border-radius: 1.25em;
+	height: 100vh;
+    padding-bottom: 15vh;
+}
+
+.leftSection{
+	padding-left: 2em;
+	padding-right: 40em;
+	padding-top: 1em;
+	padding-bottom: 2em;
+    display: inline-block;
+    width: 100%;
+  /*  flex-direction: column;
+    flex: 1;*/
+}
+
+.pType1{
+    color: #7a898a;
+    line-height: 0;
+    font-size: 1em
+}
+
+.bill{
+	padding-top: 0.75em;
+}
+
+#bill, #numberOfPeople{
+	color: HSL(189°, 41%, 97%);
+    text-align: right;
+    font-family: "Space Mono";
+    background-color: #f3f8fb;
+    color: HSL(189°, 41%, 97%);
+    color: #a5b6b6;
+    border: 0;
+    border-radius: 0.25em;
+    height: 1.5em;
+    font-size: 1.5em;
+}
+
+.divButtons{
+    width: 100%;
+	/*display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.75em;*/
+    padding-top: 0.75em;
+    padding-bottom: 2em;
+}
+    
+    button{
+    color: hsl(189, 41%, 97%);
+    background-color: hsl(183, 100%, 15%);
+    border: 0;
+    width: 6em;
+    height: 2em;
+    border-radius: 0.25em;
+    font-family: "Space Mono";
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin: 0.25em;
+    }
+
+    button:focus{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+}
+    
+    #customButton{
+    border: 0;
+    width: 6em;
+    height: 2em;
+    border-radius: 0.25em;
+    font-family: "Space Mono";
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(83,121,120);
+    background-color: #f3f8fb;
+    color: HSL(189°, 41%, 97%);
+    margin: 0.25em;
+}
+
+.rightSection{
+    background-color: hsl(183, 100%, 15%);
+    border-radius:1.25em;
+    overflow: hidden;
+    margin-left: 1.75em;
+    margin-right: 1.75em;
+    margin-bottom: 2em;
+}
+
+.rightSectionUpper{
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 1.25em;
+}
+
+.pType2{
+    color:  #F4FAFA;
+    font-size: 0.85em;
+    padding-left: 2em;
+}
+
+.tipAmount{
+	padding-top: 2em;
+}
+
+.pType3{
+    color: hsl(186, 14%, 43%);
+    line-height: 0;
+    font-size: 0.85em;
+    padding-left: 2em;
+}
+
+.pTotal{
+    padding-top: 2em;
+}
+
+.tipPerPerson, .tipTotal{
+    font-size: 2em;
+    color: hsl(172, 67%, 45%);
+    padding-left: 2.75em;
+}
+
+.tipPerPerson{
+	padding-top: 0.65em;
+}
+
+.tipTotal{
+	padding-top: 0em;
+}
+
+
+.btnReset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+#reset{
+    width: 90%;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: #0c686d;
+    color: #065e64;
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 0em;
+}
+
+.resetActive{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
