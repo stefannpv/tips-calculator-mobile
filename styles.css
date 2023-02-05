@@ -26,8 +26,8 @@ html,body{
     flex-direction: column;
 	padding-top: 1em;
 	padding-bottom: 2em;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin-left: 1.75em;
+    margin-right: 1.75em;
 }
 
 .pType1{
@@ -42,11 +42,9 @@ html,body{
 }
 
 #bill, #numberOfPeople{
-	color: HSL(189°, 41%, 97%);
     text-align: right;
     font-family: "Space Mono";
     background-color: #f3f8fb;
-    color: HSL(189°, 41%, 97%);
     color: #a5b6b6;
     border: 0;
     border-radius: 0.25em;
@@ -59,7 +57,7 @@ html,body{
     padding-top: 0.75em;
     padding-bottom: 2em;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows:auto;
     justify-items: center;
     grid-gap: 1em;
@@ -69,23 +67,17 @@ html,body{
     color: hsl(189, 41%, 97%);
     background-color: hsl(183, 100%, 15%);
     border: 0;
-    width: 100%;
+    width: 6em;
     height: 2em;
     border-radius: 0.25em;
     font-family: "Space Mono";
     font-size: 1.5em;
     font-weight: lighter;
-    margin: 0.25em;
     }
-
-    button:focus{
-    color: hsl(183, 100%, 15%);
-    background-color: hsl(172, 67%, 45%);
-}
     
     #customButton{
     border: 0;
-    width: 100%;
+    width: 6em;
     height: 2em;
     border-radius: 0.25em;
     font-family: "Space Mono";
@@ -94,7 +86,15 @@ html,body{
     color: rgb(83,121,120);
     background-color: #f3f8fb;
     color: HSL(189°, 41%, 97%);
-    margin: 0.25em;
+}
+
+    button:focus{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+}
+
+.nOfPpl{
+    padding-top: 0;
 }
 
 .rightSection{
@@ -137,9 +137,6 @@ html,body{
     font-size: 0.85em;
 }
 
-.pTotal{
-}
-
 .tipPerPerson, .tipTotal{
     font-size: 2em;
     color: hsl(172, 67%, 45%);
@@ -153,7 +150,8 @@ html,body{
 }
 
 #reset{
-    width: 90%;
+    width: 82.5%;
+    height: 2.25em;
     border-radius: 0.25rem;
     border: none;
     background-color: #0c686d;
@@ -167,4 +165,138 @@ html,body{
 .resetActive{
     background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
+}
+
+@media only screen and (min-width: 600px){
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero{
+        width: 65%;
+    }
+}
+
+@media only screen and (min-width: 992px){
+
+    body{
+        overflow: hidden;
+    }
+
+    .logo-div{
+       margin-top: 3em;
+       margin-bottom: 3em;
+    }
+
+    .hero{
+        width:auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10em;
+        padding-top: 2em;
+        overflow: hidden;
+    }
+
+    .leftSection{
+        display: inline-flexbox;
+        justify-content: left;
+        align-items: flex-start;
+        margin-left: 2.5em;
+        padding-top: 0;
+    }
+
+    .pType1{
+        display: inline-block;
+        font-size: 1em;
+        padding-top: 2em;
+    }
+
+    .bill{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    #bill, #numberOfPeople{
+       height: 1.75em;
+       width: 15em;
+       font-size: 1.5em;
+    }
+
+    .divButtons{    
+        padding-top: 0.75em;
+        padding-bottom: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:auto;
+        justify-items: center;
+        grid-gap: 0.75em;
+    }
+    
+    button{
+        width: 4.5em;
+        margin: 0em;
+    }
+    
+    #customButton{
+        border: 0;
+        width: 4.5em;
+        margin: 0;
+    }
+
+    .nOfPpl{
+        padding-top: 0;
+
+    }
+
+    .rightSection{
+    width: 25em;
+    height: 23.5em;
+    margin-left: 1em;
+    }
+
+    .pType2{
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .pType3{
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .rightSectionUpper{
+        padding-top: 1.25em;
+        display: flex;
+    }
+
+    .tipAmountRight{
+        margin-top: 0;
+    }
+
+    .pTotal{
+        padding-top: 4em;
+    }
+
+    .tipPerPerson, .tipTotal{
+        font-size: 2.75em;
+    }
+
+    .tipTotal{
+        margin-top: 0;
+    }
+
+    .btnReset{
+        padding-top: 2em;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+    .logo-div{
+       margin-top: 8em;
+       margin-bottom: 8em;
+    }
 }
